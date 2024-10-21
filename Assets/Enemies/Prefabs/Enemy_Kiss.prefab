@@ -10,9 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1053688168948350351}
   - component: {fileID: 6506820781756771859}
-  - component: {fileID: 3803840644927256890}
   - component: {fileID: 836741756107038247}
-  m_Layer: 0
+  - component: {fileID: 3803840644927256890}
+  - component: {fileID: 4361339270069769340}
+  - component: {fileID: 2542678496552558492}
+  m_Layer: 7
   m_Name: Enemy_Kiss
   m_TagString: Enemies
   m_Icon: {fileID: 0}
@@ -75,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -1050486841
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 447373f51330f2d489c12962ecd6cf18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cfb797b902091a348b6925d3807a0fac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -86,27 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3803840644927256890
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8783895649204187148}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 498d3a2ac9025d246b277593702721a3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!70 &836741756107038247
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -136,9 +117,64 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0058061182, y: -0.03483677}
-  m_Size: {x: 0.6834615, y: 1.1243124}
+  m_Offset: {x: -0.0018966198, y: -0.03226924}
+  m_Size: {x: 0.6372452, y: 1.1191773}
   m_Direction: 0
+--- !u!95 &3803840644927256890
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8783895649204187148}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f634c9ae81bb98747a7a7d9978128687, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!195 &4361339270069769340
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8783895649204187148}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.53333336
+  m_Speed: 3
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.3333334
+  m_BaseOffset: 0.6666667
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &2542678496552558492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8783895649204187148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253f39e13de99144083914dbfc547a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -6,15 +6,17 @@ TagManager:
   tags:
   - Enemies
   - Dusts
+  - Ignored
+  - Wall
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Walkable
   - Water
   - UI
-  - 
-  - 
+  - Unwalkable
+  - Enemies
   - 
   - 
   - 
@@ -46,6 +48,9 @@ TagManager:
   - name: Background Map
     uniqueID: 308357119
     locked: 0
-  - name: Character
+  - name: Player
     uniqueID: 3244480455
+    locked: 0
+  - name: Effects
+    uniqueID: 3072555669
     locked: 0

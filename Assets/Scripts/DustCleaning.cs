@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class DustCleaning : MonoBehaviour
 {
     public GameObject Player;
     private PlayerController playerControllerScript;
-    private float offset = 0.41f;
+    private float offset = 0.22f;
+    public GameObject pressToCleanText;
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +31,24 @@ public class DustCleaning : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D dust)
     {
+        if(dust.gameObject.tag == "Dusts")
+        {
+            pressToCleanText.SetActive(true);
+        }
+        else
+        {
+            pressToCleanText.SetActive(false);
+        }
         if (playerControllerScript.cleaningInput != 0 && dust.gameObject.tag == "Dusts")
         {
-            Destroy(dust.gameObject);
+            DustInfo dustInfo = dust.gameObject.GetComponent<DustInfo>();
+            dustInfo.dustHp -= 5;
+            Debug.Log(dustInfo.dustHp);
+            if (dustInfo.dustHp <= 0)
+            {
+                Destroy(dust.gameObject);
+                playerControllerScript.cleaningSuccessful.Play();
+            }
         }
     }
 }
