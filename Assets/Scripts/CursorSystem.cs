@@ -25,7 +25,7 @@ public class CursorSystem : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name != "Game")
         {
-            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            Cursor.SetCursor(normalCursorTexture, Vector2.zero, CursorMode.Auto);
         }
         else if (SceneManager.GetActiveScene().name == "Game")
         {

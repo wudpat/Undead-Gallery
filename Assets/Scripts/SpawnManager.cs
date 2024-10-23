@@ -11,7 +11,7 @@ public class SpawnManager : MonoBehaviour
     public float cooldown;
     private bool canSpawn;
     private float currentCooldownTime;
-    private float timeWithoutEnemies = -15;
+    private float timeWithoutEnemies = -5;
     // Start is called before the first frame update
     void Start()
     {

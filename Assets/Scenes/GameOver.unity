@@ -704,7 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb2a0c85fb1b4046b12ced3ab0df2ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalCursorTexture: {fileID: 0}
+  normalCursorTexture: {fileID: 2800000, guid: 6b03602afffbfca43a326562c4e98a91, type: 3}
   gameCursorTexture: {fileID: 2800000, guid: b909e78b88311a74695911561d58ef56, type: 3}
 --- !u!1 &1714938267
 GameObject:
@@ -1044,7 +1044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6679245, g: 0.6326763, b: 0.59357065, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

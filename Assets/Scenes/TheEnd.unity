@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb2a0c85fb1b4046b12ced3ab0df2ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalCursorTexture: {fileID: 0}
+  normalCursorTexture: {fileID: 2800000, guid: 6b03602afffbfca43a326562c4e98a91, type: 3}
   gameCursorTexture: {fileID: 2800000, guid: b909e78b88311a74695911561d58ef56, type: 3}
 --- !u!4 &2056819334
 Transform:
